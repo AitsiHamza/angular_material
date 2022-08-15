@@ -1,0 +1,13 @@
+<div>
+  <h1>Votre requete est : </h1>
+  <ul>
+    <li>
+      <span *ngIf="data.message=== 'valid'">&#10003;</span>
+      <span *ngIf="data.message === 'invalid'">&#x2718;</span>
+      {{data.message}}
+    </li>
+  </ul>
+</div>
+<div>
+<button (click)="dialogRef.close()">Close</button>
+</div>
